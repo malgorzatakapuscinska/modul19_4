@@ -27,11 +27,11 @@ console.log('NODE_ENV: ', env);*/
 
 module.exports = {
 	entry: [ 
-		'./actions.js'
+		'./reducers.js'
 	],
 	output: {
 			path: path.resolve(__dirname, './'),
-			filename: 'actions.boundle.js'
+			filename: 'reducers.boundle.js'
 	},
 	module: {
 		rules: [ 
