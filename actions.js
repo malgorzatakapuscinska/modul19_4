@@ -1,6 +1,6 @@
 import uuid from 'uuid';
 
-/* export*/ const 
+export const 
  	ADD_COMMENT = 'ADD_COMMENT',
 	EDIT_COMMENT = 'EDIT_COMMENT',
 	REMOVE_COMMENT = 'DELETE_COMMENT',
@@ -9,7 +9,7 @@ import uuid from 'uuid';
 	
 	
 
-function addComment(text){
+export const addComment = function addComment(text){
 	return {
 	type: ADD_COMMENT,
 	text,
@@ -17,7 +17,7 @@ function addComment(text){
 	}
 }
 
-function editComment(text, id){
+export const editComment = function editComment(text, id){
 	return {
 		type: EDIT_COMMENT,
 		text,
@@ -25,7 +25,7 @@ function editComment(text, id){
 	}
 }
 
-function removeComment(id){
+export const removeComment = function removeComment(id){
 	return {
 		type: REMOVE_COMMENT,
 		id
@@ -45,4 +45,3 @@ function thumbDownComment(id) {
 		id
 	}
 }
-export default actions;
